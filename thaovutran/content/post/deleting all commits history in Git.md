@@ -28,47 +28,47 @@ While working with Git, I think that some times we have ever wanted to delete co
 We should not delete `.git` folder in your repository. It may cause some problems in future. If you want to delete all of commits history but keeping the code in its current state. So you should try to do this guide below.
 
 
-<i>#Check out your repo to a temporary branch:</i><br>
+<i>`#Check out your repo to a temporary branch:`</i><br>
 $ git checkout --orphan TEMP_BRANCH
 
-<i>#Add all the files:</i><br>
+<i>`#Add all the files:`</i><br>
 $ git add -A
 
-<i>#Commit the changes:</i><br>
+<i>`#Commit the changes:`</i><br>
 $ git commit -am "Initial commit"
 
-<i>#Delete the old branch (ex: master branch):</i><br>
+<i>`#Delete the old branch (ex: master branch):`</i><br>
 $ git branch -D master
 
-<i>#Rename the temporary branch to yours:</i><br>
+<i>`#Rename the temporary branch to yours:`</i><br>
 $ git branch -m master
 
-<i>#Finally, force update to your repository:</i><br>
+<i>`#Finally, force update to your repository:`</i><br>
 $ git push -f origin master
 
 <p>&nbsp;</p>
 
 ## B>. Method 2
 
-<i>#Clone the repo, e.g. `docker_thblog`:</i><br>
+<i>`#Clone the repo, e.g. `docker_thblog`:`</i><br>
 $ git clone https://github.com/thaovutran/docker_thblog.git
 
-<i>#All of the commits history are in the `.git` folder:</i><br>
+<i>`#All of the commits history are in the `.git` folder:`</i><br>
 $ cd docker_thblog
 
-<i>#And delete the `.git` folder:</i><br>
+<i>`#And delete the `.git` folder:`</i><br>
 $ git rm -rf .git
 
-<i>#Re-initialize the repository:</i>
+<i>`#Re-initialize the repository:`</i>
 <br>$ git init
 <br>$ git remote add origin https://github.com/thaovutran/docker_thblog.git
 <br>$ git remote -v
 
-<i>#Add all the files and commit the changes:</i>
+<i>`#Add all the files and commit the changes:`</i>
 <br>$ git add --all
 <br>$ git commit -am "Initial commit"
 
-<i>#Force push update to the master branch:</i>
+<i>`#Force push update to the master branch:`</i>
 <br>$ git push -f origin master
 
 <p>&nbsp;</p>
