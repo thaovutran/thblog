@@ -1,0 +1,7 @@
+RUN CMD docker ps -a
+RUN CMD docker images
+RUN CMD docker pull thawtran/thblog
+RUN CMD docker rm -f thblog
+RUN CMD docker run -d --restart=always -p 80:80 --name blog thawtran/thblog
+RUN CMD docker ps -a
+RUN CMD docker images

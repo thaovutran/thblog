@@ -1,0 +1,25 @@
+language: python
+python:
+  - 2.7
+
+services:
+  - docker
+
+hosts:
+  - feed.thaovutran.com
+  - thaovutran.com
+
+install:
+  - docker build -t thblog .
+  - docker run -d -p 127.0.0.1:80:80 --name thblog thblog
+
+before_script:
+  - pip install -r requirements.txt
+  - pip install mock
+  - pip install requests
+  - pip install feedparser
+  - pip install coverage
+  - pip install coveralls
+
+script:
+  - docker ps | grep -q thblog
