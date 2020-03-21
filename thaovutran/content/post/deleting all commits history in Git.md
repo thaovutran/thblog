@@ -59,17 +59,17 @@ $ cd docker_thblog
 <i>#And delete the `.git` folder:</i><br>
 $ git rm -rf .git
 
-<i>#Re-initialize the repository:</i><br>
-$ git init<br>
-$ git remote add origin https://github.com/thaovutran/docker_thblog.git<br>
-$ git remote -v
+<i>#Re-initialize the repository:</i>
+<br>$ git init
+<br>$ git remote add origin https://github.com/thaovutran/docker_thblog.git
+<br>$ git remote -v
 
-<i>#Add all the files and commit the changes:</i><br>
-$ git add --all<br>
-$ git commit -am "Initial commit"
+<i>#Add all the files and commit the changes:</i>
+<br>$ git add --all
+<br>$ git commit -am "Initial commit"
 
-<i>#Force push update to the master branch:</i><br>
-$ git push -f origin master
+<i>#Force push update to the master branch:</i>
+<br>$ git push -f origin master
 
 <p>&nbsp;</p>
 

@@ -125,6 +125,9 @@ I often find myself wanting to copy a file to a number of hosts. Rather than run
      > scp somefile $HOST:/var/tmp/
      > done
 
+
 In this example you may notice that the input for the for loop is simply a list of hosts. In Bash the default field separator is a space; by giving a list of host-names separated by a space the for loop will run an scp command targeting each host. This command is a bit more effective when you have SSH keys setup between the hosts, but even if you have to type a password I think this tends to be faster when your loop is running against a list of 5+ hosts.
+
+<p>&nbsp;</p>
 
 That about covers it for my list of example for loops, if you have another example that you think I should have covered hop to the comments and share it.
