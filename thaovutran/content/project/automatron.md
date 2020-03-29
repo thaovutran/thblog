@@ -14,7 +14,7 @@ summary = "Simply put, it detects system events & takes action to correct them. 
 image_preview = "automatron_logo.png"
 
 # Optional external URL for project (replaces project detail page).
-external_link = "https://gitlab.com/thao.tran/cookbooks"
+external_link = "https://gitlab.com/thao.tran/chef-cookbooks"
 
 # Does the project detail page use math formatting?
 math = false
