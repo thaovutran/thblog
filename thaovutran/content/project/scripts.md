@@ -8,7 +8,7 @@ draft = false
 tags = ["python", "bash", "shell", "unix/linux"]
 
 # Project summary to display on homepage.
-summary = "A common sense remote command execution tool writen in Python Fabric and Bash/Shell."
+summary = "A collection of Python and Bash/Shell scrtips to deploy new build, status check, etc."
 
 # Optional image to display on homepage.
 image_preview = ""
