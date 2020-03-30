@@ -1,5 +1,5 @@
 +++
-title = "Python Fabric and Bash/Shell"
+title = "Python Bash/Shell"
 date = 2020-03-17T01:28:33-07:00
 draft = false
 
